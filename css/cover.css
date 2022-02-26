@@ -50,7 +50,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url("file:///C:/Users/DELL/Desktop/Almond%20project/img/F.jpg");
+  background-image: url("img/F.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
