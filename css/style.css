@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /*The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now! */
+}
+
+:root { /*The :root CSS pseudo-class matches the root element of a tree representing the document.*/
+    --ff-primary: 'Source Sans Pro', sans-serif; /* ff --> font family*/
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300; /* fw --> font weight*/
+    --fw-bold: 900;
+
+    --clr-light: #fff; /* clr --> color*/
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem; /* fs --> font size*/
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px) { /*What this query really means, is “If [device width] is greater than or equal to 800px, then do {…}”*/
+    :root {
+        --fs-h1: 4.5;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
